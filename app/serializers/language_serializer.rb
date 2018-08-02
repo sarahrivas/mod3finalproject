@@ -1,6 +1,6 @@
 class LanguageSerializer < ActiveModel::Serializer
-  attributes :id, :name, :code
+  # attributes :id, :name, :code
 
-  has_many :questions
-  has_many :users
+  # has_many :questions
+  # has_many :users
 end

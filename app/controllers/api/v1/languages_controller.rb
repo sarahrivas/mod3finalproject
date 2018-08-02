@@ -28,7 +28,7 @@ class  Api::V1::LanguagesController < ApplicationController
 
   private
   def language_params
-    params.permit(:name, :code)
+    params.require(:language).permit(:name, :code)
   end
 
   def set_language

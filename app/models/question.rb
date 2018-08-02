@@ -1,5 +1,5 @@
 class Question < ApplicationRecord
-  belongs_to :languages
-  has_many :users, through: :languages
-  has_many :answers
+  # belongs_to :language
+#   has_many :users, through: :languages
+  # has_many :answers
 end

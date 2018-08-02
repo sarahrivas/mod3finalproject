@@ -28,7 +28,7 @@ class Api::V1::ScoresController < ApplicationController
 
   private
   def score_params
-    params.permit(:name, :lives, :user_id)
+    params.permit(:lives, :user_id)
   end
 
   def set_user
