@@ -2,8 +2,8 @@ class  Api::V1::LanguagesController < ApplicationController
   before_action :set_language, only: [:show,:update,:destroy]
 
   def index
-    languages = Language.all
-    render json: languages, status: 200
+    # languages = Language.all
+    render json: {apiKey: ENV['apiKey']}
   end
 
   def create
